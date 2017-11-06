@@ -1,0 +1,54 @@
+{
+	"name": "WebdriverJS",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Node.js along with Webdriver sample application.",
+	"main": "dynamicScroll.js",
+	"scripts": {
+		"start": "node dynamicScroll.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"automation",
+		"selenium",
+		"testing",
+		"webdriver",
+		"webdriverjs"
+	],
+	"webdriverVersions": {
+		"selenium": "2.53.1",
+		"chromedriver": "2.23",
+		"geckodriver": "v0.13.0",
+		"iedriver": "2.53.1",
+		"androidsdk": "24.4.1",
+		"appium": "1.6.0"
+	},
+	"cdnUrls": {
+		"selenium": "https://selenium-release.storage.googleapis.com/",
+		"chromedriver": "https://chromedriver.storage.googleapis.com/",
+		"geckodriver": "https://github.com/mozilla/geckodriver/releases/download/",
+		"iedriver": "https://selenium-release.storage.googleapis.com/",
+		"androidsdk": "http://dl.google.com/android/"
+	},
+	"dependencies": {
+		"selenium": "2.53.1",
+		"chromedriver": "2.23",
+		
+		"express": "3.2.6",
+		"body-parser":"*",
+		"mongoose":"*",
+		"busboy":"*",
+		"gridfs-stream":"^1.1.1",
+		"fs":"*",
+		"connect-multiparty":"*",
+		"mongodb":"2.0.31",
+		
+		"mkdirp": {
+			"version": "*",
+			"resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.4.tgz",
+			"integrity": "sha1-+MgdITtymaAx8ZOlfXUqF9L2x9g="
+		}
+	},
+	"author": "Yashwanth M",
+	"license": "ISC"
+}

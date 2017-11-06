@@ -1,0 +1,11 @@
+let select = driver.findElement(By.css("select"));
+ let options = select.findElements(By.css("option"));
+ options.then(values => {
+     return Promise.all(values.map(el => el.getText())).then(optTexts => {
+         return values[optTexts.indexOf('Some option text')].click();
+     });
+ });
+ 
+driver.findElement({id: 'myDropDown'});// select dropdown element you wish to select
+driver.sleep(1000);//not necessary
+driver.findElement({id: 'myDropDown'}).sendKeys('name_of_option');//sending keys automatically fills dropdown with desired option
